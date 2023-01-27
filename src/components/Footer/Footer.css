@@ -1,0 +1,79 @@
+footer{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    
+    background-color: rgb(27, 27, 27);
+    
+    
+    
+    
+    color: rgb(185, 185, 185);
+    font-size: 15px;
+}
+
+.footerUp{
+    display: flex; 
+    justify-content: space-around;
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    margin-top: 30px;
+    
+    
+
+}
+
+.acesso, .contato{
+    background-color: rgb(27, 27, 27);
+    
+}
+
+
+.list_acesso li::before{
+    content: "\00BB";
+
+}
+
+.list_acesso, .list_contato {
+    
+    list-style: none;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+}
+
+.list_acesso a, .list_contato a{
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+    transition: all 0.3s;
+}
+
+.list_acesso a:hover, .list_contato a:hover{
+    color: white;
+}
+
+.direitos{
+    background-color: rgb(27, 27, 27);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.direitos a{
+    text-decoration: none;
+    color: rgb(109, 64, 64);
+    transition: all 0.5s;
+}
+
+.direitos a:hover{
+    text-decoration: none;
+    color:white;
+}

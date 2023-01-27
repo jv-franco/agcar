@@ -1,0 +1,107 @@
+.servicos{
+    margin-top: 7px;
+    background-color: var(--cor01);
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+}
+
+.servicos h2{
+    color: white;
+    font-size: 30px;
+    text-shadow: 3px 3px #831e2791;
+    margin: 30px 0;
+}
+
+.card_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+}
+
+.card{
+    border: 1px solid var(--cor02);
+    border-radius: 5%;
+    box-shadow: 2px 2px 6px  rgba(0, 0, 0, 0.637);
+    margin: 10px;
+    
+    height: 300px;
+    width: 400px;
+    
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.5s;
+
+    
+
+}
+
+
+
+
+
+.servico-title{
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    background-color:rgba(15, 15, 15, 0.815);
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 1px solid var(--cor02);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.37);
+}
+
+.servico-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    font-size: 1rem;
+    height: 140px;
+    
+    margin: 25px 15px;
+    color: white;
+    background: rgba(0, 0, 0, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #a61c2873;
+    transition: all 0.5s;
+}
+
+.showDesc{
+    opacity: 1;
+}
+
+.servicos-btn{
+    
+    border: none;
+    padding: 10px;
+    background-color: rgba(196, 33, 33, 0.685);
+    color: white;
+    border: 1px solid rgb(7, 7, 7);
+    transition: 0.8s all;
+    cursor: pointer;
+}
+
+.servicos-btn:hover{
+    background-color: rgba(226, 35, 35, 0.815);
+    color: white;
+    
+}
+
+@media only screen and (max-width: 480px){
+    .card{
+        width: 350px;
+    }
+
+    .servico-desc{
+        margin: 25px 0;
+    }
+}

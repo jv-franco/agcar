@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header';
+import React from 'react';
+import './index.css';
+import Footer from './components/Footer/Footer';
+import Home from './components/Principal/Home';
+import Sobre from './components/Sobre/Sobre';
+import { useState, useEffect } from 'react';
+import Servicos from './components/Serviços/Servicos';
+import Local from './components/Local/Local';
+
+
+
 
 function App() {
+
+  const [activeColor, setActiveColor] = useState(false);
+
+  useEffect(function(){
+    function scrollPosition(){
+      
+      if(window.scrollY > 76){
+        setActiveColor(true)
+      }else{
+        setActiveColor(false)
+      }
+    }
+
+    window.addEventListener('scroll', scrollPosition)
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header acao={activeColor}/>
+    <Home></Home>
+    <Sobre></Sobre>
+    <Servicos/>
+    <Local/>
+    
+    <Footer/>
+    </>
   );
 }
 
