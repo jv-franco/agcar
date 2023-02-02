@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/agcar/static/css/main.41bc95eb.css",
+    "main.js": "/agcar/static/js/main.3d009eec.js",
+    "index.html": "/agcar/index.html",
+    "main.41bc95eb.css.map": "/agcar/static/css/main.41bc95eb.css.map",
+    "main.3d009eec.js.map": "/agcar/static/js/main.3d009eec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41bc95eb.css",
+    "static/js/main.3d009eec.js"
+  ]
+}
