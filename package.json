@@ -1,8 +1,8 @@
 {
   "name": "ag_car",
   "version": "0.1.0",
-  "homepage": "https://jv-franco.github.io/ag_car",
-  "private": false,
+  "homepage": "https://jv-franco.github.io/agcar",
+  "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@react-google-maps/api": "^2.17.1",
